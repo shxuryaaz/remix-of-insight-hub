@@ -75,6 +75,14 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-snap-type: none;
+  }
+
+  /* Slower smooth scrolling via JS — CSS scroll-behavior is instant-ish,
+     so we rely on JS scrollIntoView which respects the browser's smooth algo.
+     Adding a scroll-margin so sections aren't hidden behind the navbar. */
+  [id] {
+    scroll-margin-top: 5rem;
   }
 
   * {
