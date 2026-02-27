@@ -42,7 +42,7 @@ const PersonasSection = () => (
   <section id="personas" className="py-24 bg-secondary/50">
     <div className="container mx-auto px-6">
       <div className="text-center mb-16">
-        <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">Built For Teams</span>
+        <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">Who It's For</span>
         <h2 className="text-3xl md:text-5xl font-bold font-display text-foreground mt-3 mb-4">
           Every role, one source of truth
         </h2>
