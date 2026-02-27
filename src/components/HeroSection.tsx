@@ -82,9 +82,9 @@ const HeroSection = () => (
 
     <div className="container mx-auto px-6 relative z-10 text-center">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="max-w-3xl mx-auto"
       >
         <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 sm:px-4 py-1.5 mb-6 md:mb-8">

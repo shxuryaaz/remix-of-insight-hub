@@ -86,10 +86,10 @@ const HowItWorksSection = () => (
         {steps.map((step, i) => (
           <motion.div
             key={step.num}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: i * 0.06 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: i * 0.04 }}
             className="bg-card rounded-2xl p-8 shadow-card border border-border"
           >
             <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">{step.num}</span>
@@ -116,10 +116,10 @@ const CTASection = () => (
     }} />
     <div className="container mx-auto px-6 text-center relative z-10">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         <img src={agilowA} alt="" className="w-16 h-16 mx-auto mb-6 animate-float" />
         <h2 className="text-3xl md:text-5xl font-bold font-display text-primary-foreground mb-4">
           Ready to stop routing<br />and start leading?
