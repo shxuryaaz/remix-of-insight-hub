@@ -73,7 +73,7 @@ const HowItWorksSection = () => (
   <section id="how-it-works" className="py-28 bg-background">
     <div className="container mx-auto px-6">
       <div className="text-center mb-20">
-        <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">Our Process</span>
+        <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">How It Works</span>
         <h2 className="text-3xl md:text-5xl font-bold font-display text-foreground mt-3 mb-4">
           Our Simple, Smart &<br />Scalable Process
         </h2>
