@@ -92,7 +92,7 @@ const HeroSection = () => (
           <span className="text-primary-foreground/80 text-sm font-medium">Project Context Engine</span>
         </div>
 
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.25] tracking-tight mb-5 font-display">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-5 font-display">
           Complete project clarity.{" "}
           <span className="text-brand-orange">No intuition required.</span>
         </h1>
