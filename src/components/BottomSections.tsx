@@ -3,49 +3,113 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import agilowA from "@/assets/agilow-a.png";
 
-const HowItWorksSection = () => {
-  const steps = [
-    { num: "01", title: "Connect your tools", desc: "Slack, Jira, Gmail, Zoom — one-click integrations. The MCP indexes everything in the background." },
-    { num: "02", title: "Context builds itself", desc: "Entity resolution links conversations, tickets, and decisions. No data entry required." },
-    { num: "03", title: "Ask, don't search", desc: "Query your project's memory through the Agilow Chat. Every answer cites its source." },
-    { num: "04", title: "Decide with evidence", desc: "Dashboards, risk heatmaps, and decision history replace gut-check status meetings." },
-  ];
-
-  return (
-    <section id="how-it-works" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">How It Works</span>
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-foreground mt-3 mb-4">
-            From chaos to clarity in 4 steps
-          </h2>
+const steps = [
+  {
+    num: "Step 1",
+    title: "Connect your tools",
+    desc: "Slack, Jira, Gmail, Zoom — one-click integrations. The MCP indexes everything in the background.",
+    visual: (
+      <div className="bg-primary/90 rounded-xl p-4 space-y-2">
+        {["Slack", "Jira", "Gmail", "Zoom"].map((t) => (
+          <div key={t} className="bg-primary-foreground/5 rounded-lg px-4 py-2.5 flex items-center justify-between">
+            <span className="text-xs text-primary-foreground/70">{t}</span>
+            <span className="w-2 h-2 rounded-full bg-success" />
+          </div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    num: "Step 2",
+    title: "Context builds itself",
+    desc: "Entity resolution links conversations, tickets, and decisions. No data entry required.",
+    visual: (
+      <div className="bg-primary/90 rounded-xl p-4">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="h-1 flex-1 rounded-full bg-accent/40" />
+          <div className="h-1 flex-1 rounded-full bg-accent/60" />
+          <div className="h-1 flex-1 rounded-full bg-accent/80" />
+          <div className="h-1 flex-1 rounded-full bg-accent" />
         </div>
-
-        <div className="max-w-3xl mx-auto space-y-6">
-          {steps.map((step, i) => (
-            <motion.div
-              key={step.num}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="flex gap-6 items-start bg-card rounded-2xl p-6 shadow-card border border-border"
-            >
-              <span className="text-3xl font-bold font-display text-brand-orange/30 shrink-0">{step.num}</span>
-              <div>
-                <h3 className="text-lg font-bold font-display text-foreground mb-1">{step.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+        <p className="text-[10px] text-primary-foreground/40 text-center">Indexing 2,340 messages…</p>
+      </div>
+    ),
+  },
+  {
+    num: "Step 3",
+    title: "Ask, don't search",
+    desc: "Query your project's memory through the Agilow Chat. Every answer cites its source.",
+    visual: (
+      <div className="bg-primary/90 rounded-xl p-4 space-y-2">
+        <div className="bg-accent/20 rounded-lg px-3 py-2 text-[10px] text-primary-foreground/60 ml-auto max-w-[75%]">What's blocking the API?</div>
+        <div className="bg-primary-foreground/5 rounded-lg px-3 py-2 text-[10px] text-primary-foreground/60 max-w-[85%]">
+          Vendor delay flagged in Slack #eng 2d ago. See JIRA-512.
         </div>
       </div>
-    </section>
-  );
-};
+    ),
+  },
+  {
+    num: "Step 4",
+    title: "Decide with evidence",
+    desc: "Dashboards, risk heatmaps, and decision history replace gut-check status meetings.",
+    visual: (
+      <div className="bg-primary/90 rounded-xl p-4">
+        <div className="grid grid-cols-2 gap-2">
+          <div className="bg-success/10 rounded-lg p-2 text-center">
+            <p className="text-xs font-bold text-success">On Track</p>
+            <p className="text-[9px] text-primary-foreground/40">8 projects</p>
+          </div>
+          <div className="bg-warning/10 rounded-lg p-2 text-center">
+            <p className="text-xs font-bold text-warning">At Risk</p>
+            <p className="text-[9px] text-primary-foreground/40">2 projects</p>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+];
+
+const HowItWorksSection = () => (
+  <section id="how-it-works" className="py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <div className="text-center mb-20">
+        <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">Our Process</span>
+        <h2 className="text-3xl md:text-5xl font-bold font-display text-foreground mt-3 mb-4">
+          Our Simple, Smart &<br />Scalable Process
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          From chaos to clarity in four steps — no data entry, no busywork.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {steps.map((step, i) => (
+          <motion.div
+            key={step.num}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.1 }}
+            className="bg-card rounded-2xl p-8 shadow-card border border-border"
+          >
+            <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">{step.num}</span>
+            <h3 className="text-xl font-bold font-display text-foreground mt-2 mb-2">{step.title}</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-5">{step.desc}</p>
+            {step.visual}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 const CTASection = () => (
-  <section className="py-24 bg-gradient-hero relative overflow-hidden">
+  <section className="py-28 bg-gradient-hero relative overflow-hidden">
+    {/* Glowing orb */}
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px]">
+      <div className="absolute inset-0 rounded-full bg-brand-orange/15 blur-[80px]" />
+      <div className="absolute inset-[20%] rounded-full bg-accent/20 blur-[60px]" />
+    </div>
     <div className="absolute inset-0 opacity-[0.03]" style={{
       backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
       backgroundSize: "32px 32px"
