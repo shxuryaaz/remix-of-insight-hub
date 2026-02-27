@@ -101,13 +101,10 @@ const HeroSection = () => (
           Agilow unifies Slack, Jira, and meeting context into a single, verifiable source of truth. Stop chasing updates and start leading—reclaim 10 hours of your week, every week.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <Button variant="hero" size="xl">
             Get Early Access
             <ArrowRight className="ml-1" />
-          </Button>
-          <Button variant="hero-outline" size="xl">
-            View Features
           </Button>
         </div>
 
