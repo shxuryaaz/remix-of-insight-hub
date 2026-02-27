@@ -45,12 +45,12 @@ const HeroSection = () => (
           <span className="text-primary-foreground/80 text-sm font-medium">Project Context Engine</span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-[1.08] tracking-tight mb-6 font-display">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-[1.15] tracking-tight mb-5 font-display">
           Complete project clarity.{" "}
           <span className="text-brand-orange">No intuition required.</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-primary-foreground/60 leading-relaxed mb-10 max-w-2xl mx-auto">
+        <p className="text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-10 max-w-xl mx-auto">
           Agilow unifies Slack, Jira, and meeting context into a single, verifiable source of truth. Stop chasing updates and start leading—reclaim 10 hours of your week, every week.
         </p>
 
