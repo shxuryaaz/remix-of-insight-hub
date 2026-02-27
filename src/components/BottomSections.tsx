@@ -120,6 +120,7 @@ const CTASection = () => (
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <img src={agilowA} alt="" className="w-16 h-16 mx-auto mb-6 animate-float" />
         <h2 className="text-3xl md:text-5xl font-bold font-display text-primary-foreground mb-4">
           Ready to stop routing<br />and start leading?
