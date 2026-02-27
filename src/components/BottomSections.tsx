@@ -86,10 +86,10 @@ const HowItWorksSection = () => (
         {steps.map((step, i) => (
           <motion.div
             key={step.num}
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.1 }}
+            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: i * 0.06 }}
             className="bg-card rounded-2xl p-8 shadow-card border border-border"
           >
             <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">{step.num}</span>
