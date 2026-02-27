@@ -34,7 +34,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button variant="hero" size="sm">Book a Call</Button>
+          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm">Book a Call</Button></a>
         </div>
         <button className="md:hidden text-primary-foreground" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -56,7 +56,7 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="mt-2 w-full">Book a Call</Button>
+              <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm" className="mt-2 w-full">Book a Call</Button></a>
             </div>
           </motion.div>
         )}
