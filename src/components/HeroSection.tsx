@@ -87,9 +87,9 @@ const HeroSection = () => (
         transition={{ duration: 0.7 }}
         className="max-w-3xl mx-auto"
       >
-        <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-1.5 mb-8">
-          <span className="bg-brand-orange text-brand-orange-foreground text-xs font-bold px-2.5 py-0.5 rounded-full">New</span>
-          <span className="text-primary-foreground/80 text-sm font-medium">Project Context Engine</span>
+        <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 sm:px-4 py-1.5 mb-6 md:mb-8">
+          <span className="bg-brand-orange text-brand-orange-foreground text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 rounded-full">New</span>
+          <span className="text-primary-foreground/80 text-xs sm:text-sm font-medium">Project Context Engine</span>
         </div>
 
         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-4 md:mb-5 font-display">
