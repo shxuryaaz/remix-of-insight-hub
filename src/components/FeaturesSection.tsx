@@ -143,10 +143,10 @@ const FeaturesSection = () => (
         {features.map((f, i) => (
           <motion.div
             key={f.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: i * 0.05 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.04 }}
             className={`grid md:grid-cols-2 gap-8 items-center bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all p-8 md:p-10 ${
               i % 2 === 1 ? "md:direction-rtl" : ""
             }`}
