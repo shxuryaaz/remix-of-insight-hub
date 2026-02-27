@@ -46,12 +46,12 @@ const HeroSection = () => (
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-[1.08] tracking-tight mb-6 font-display">
-          Stop being your team's{" "}
-          <span className="text-brand-orange">human router.</span>
+          Complete project clarity.{" "}
+          <span className="text-brand-orange">No intuition required.</span>
         </h1>
 
         <p className="text-lg md:text-xl text-primary-foreground/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-          Agilow connects your Slack, Jira, email, and meetings into one intelligent layer — so your team gets the answers they need without waiting on you.
+          Agilow unifies Slack, Jira, and meeting context into a single, verifiable source of truth. Stop chasing updates and start leading—reclaim 10 hours of your week, every week.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
