@@ -101,16 +101,13 @@ const HeroSection = () => (
           Agilow unifies Slack, Jira, and meeting context into a single, verifiable source of truth. Stop chasing updates and start leading—reclaim 10 hours of your week, every week.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer">
             <Button variant="hero" size="xl">
               Book a Call
               <ArrowRight className="ml-1" />
             </Button>
           </a>
-          <Button variant="hero-outline" size="xl" onClick={() => document.querySelector('#features')?.scrollIntoView({ behavior: 'smooth' })}>
-            Features
-          </Button>
         </div>
 
         <div className="mt-10 md:mt-16 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-primary-foreground/40 text-xs sm:text-sm">
