@@ -1,22 +1,69 @@
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import agilowLogoWhite from "@/assets/agilow-logo-white.png";
 
-const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-sidebar-border">
-    <div className="container mx-auto flex h-16 items-center justify-between px-6">
-      <img src={agilowLogoWhite} alt="Agilow" className="h-8" />
-      <div className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium">Home</a>
-        <a href="#features" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium">Features</a>
-        <a href="#how-it-works" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium">How It Works</a>
-        <a href="#personas" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium">For Teams</a>
-        <Button variant="hero" size="sm">Book a Call</Button>
+const navLinks = [
+  { label: "Home", href: "#" },
+  { label: "Features", href: "#features" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "For Teams", href: "#personas" },
+];
+
+const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  e.preventDefault();
+  if (href === "#") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+  const el = document.querySelector(href);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-sidebar-border">
+      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+        <img src={agilowLogoWhite} alt="Agilow" className="h-8" />
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((l) => (
+            <a key={l.label} href={l.href} onClick={(e) => handleSmoothScroll(e, l.href)} className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium">
+              {l.label}
+            </a>
+          ))}
+          <Button variant="hero" size="sm">Book a Call</Button>
+        </div>
+        <button className="md:hidden text-primary-foreground" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+          {open ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
-    </div>
-  </nav>
-);
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="md:hidden overflow-hidden bg-primary/95 border-t border-sidebar-border"
+          >
+            <div className="flex flex-col gap-1 px-6 py-4">
+              {navLinks.map((l) => (
+                <a key={l.label} href={l.href} onClick={(e) => { handleSmoothScroll(e, l.href); setOpen(false); }} className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium py-2.5">
+                  {l.label}
+                </a>
+              ))}
+              <Button variant="hero" size="sm" className="mt-2 w-full">Book a Call</Button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
+  );
+};
 
 const HeroSection = () => (
   <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden pt-16">
