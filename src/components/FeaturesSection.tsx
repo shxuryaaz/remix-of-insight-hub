@@ -5,28 +5,28 @@ const features = [
   {
     icon: Layers,
     title: "Multi-Channel Aggregation",
-    description: "Automatically indexes Slack, Jira, email, and meeting transcripts. Entity resolution links 'the checkout bug' to JIRA-402 across all channels.",
+    description: "Pulls context from Slack, Jira, email, and meetings into one place — so your team stops hunting across five tabs to find the answer they need.",
     badge: "MCP Engine",
     mockup: <AggregationMockup />,
   },
   {
     icon: BarChart3,
     title: "Dynamic Dashboards",
-    description: "Real-time effort distribution, risk heatmaps, and sentiment analysis. See where hours actually go — not just what's in the ticket tracker.",
+    description: "See where your team's time actually goes — not just what's logged in a ticket. Effort breakdowns, risk flags, and trend lines updated in real time.",
     badge: "Visual Insights",
     mockup: <DashboardMockup />,
   },
   {
     icon: MessageSquareText,
     title: "Clarification Chat",
-    description: "Ask 'Why did we choose X?' and get an answer synthesized from meeting notes and Slack threads — with direct source links.",
+    description: "Ask plain-English questions like 'Why did we pick this approach?' and get answers pulled from real conversations — with links to the original source.",
     badge: "AI Memory",
     mockup: <ChatMockup />,
   },
   {
     icon: History,
     title: "Decision Ledger",
-    description: "Automated decision capture from threads. Flag past mistakes as lessons. Get proactive warnings when history is about to repeat.",
+    description: "Every key decision is captured automatically from your team's discussions. Flag past missteps as lessons learned and get early warnings before you repeat them.",
     badge: "Decision History",
     mockup: <LedgerMockup />,
   },
@@ -132,10 +132,10 @@ const FeaturesSection = () => (
       <div className="text-center mb-20">
         <span className="text-sm font-semibold text-brand-orange uppercase tracking-wider">Our Services</span>
         <h2 className="text-3xl md:text-5xl font-bold font-display text-foreground mt-3 mb-4">
-          AI Solutions That Power<br />Your Project Intelligence
+          Everything Your Team Needs,<br />In One Place
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          We design, connect, and deploy context engines that help your team work smarter, not harder.
+          Four integrated capabilities that turn scattered conversations into actionable project intelligence.
         </p>
       </div>
 
