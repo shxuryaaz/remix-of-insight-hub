@@ -102,10 +102,12 @@ const HeroSection = () => (
         </p>
 
         <div className="flex justify-center">
-          <Button variant="hero" size="xl">
-            Get Early Access
-            <ArrowRight className="ml-1" />
-          </Button>
+          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="xl">
+              Talk to the Founder
+              <ArrowRight className="ml-1" />
+            </Button>
+          </a>
         </div>
 
         <div className="mt-10 md:mt-16 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-primary-foreground/40 text-xs sm:text-sm">

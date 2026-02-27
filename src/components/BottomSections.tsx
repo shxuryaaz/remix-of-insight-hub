@@ -128,10 +128,12 @@ const CTASection = () => (
         <p className="text-lg text-primary-foreground/60 mb-10 max-w-lg mx-auto">
           Join the waitlist and give your team a single source of truth — powered by the conversations you're already having.
         </p>
-        <Button variant="hero" size="xl">
-          Request Early Access
-          <ArrowRight className="ml-1" />
-        </Button>
+        <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer">
+          <Button variant="hero" size="xl">
+            Talk to the Founder
+            <ArrowRight className="ml-1" />
+          </Button>
+        </a>
       </motion.div>
     </div>
   </section>
