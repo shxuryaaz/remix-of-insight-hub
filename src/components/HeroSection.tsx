@@ -51,7 +51,7 @@ const HeroSection = () => (
         </h1>
 
         <p className="text-lg md:text-xl text-primary-foreground/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-          Agilow aggregates context from Slack, Jira, email, and meetings into one intelligent platform — so your team finds answers, not you.
+          Agilow connects your Slack, Jira, email, and meetings into one intelligent layer — so your team gets the answers they need without waiting on you.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

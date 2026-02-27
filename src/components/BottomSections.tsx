@@ -7,7 +7,7 @@ const steps = [
   {
     num: "Step 1",
     title: "Connect your tools",
-    desc: "Slack, Jira, Gmail, Zoom — one-click integrations. The MCP indexes everything in the background.",
+    desc: "Slack, Jira, Gmail, Zoom — connect in one click. Agilow starts learning your project in the background.",
     visual: (
       <div className="bg-primary/90 rounded-xl p-4 space-y-2">
         {["Slack", "Jira", "Gmail", "Zoom"].map((t) => (
@@ -22,7 +22,7 @@ const steps = [
   {
     num: "Step 2",
     title: "Context builds itself",
-    desc: "Entity resolution links conversations, tickets, and decisions. No data entry required.",
+    desc: "Agilow automatically connects related conversations, tickets, and decisions across tools — no manual tagging needed.",
     visual: (
       <div className="bg-primary/90 rounded-xl p-4">
         <div className="flex items-center gap-2 mb-3">
@@ -38,7 +38,7 @@ const steps = [
   {
     num: "Step 3",
     title: "Ask, don't search",
-    desc: "Query your project's memory through the Agilow Chat. Every answer cites its source.",
+    desc: "Ask questions in plain English and get answers sourced from your team's real conversations — with links to verify.",
     visual: (
       <div className="bg-primary/90 rounded-xl p-4 space-y-2">
         <div className="bg-accent/20 rounded-lg px-3 py-2 text-[10px] text-primary-foreground/60 ml-auto max-w-[75%]">What's blocking the API?</div>
@@ -51,7 +51,7 @@ const steps = [
   {
     num: "Step 4",
     title: "Decide with evidence",
-    desc: "Dashboards, risk heatmaps, and decision history replace gut-check status meetings.",
+    desc: "Visual dashboards and decision history replace status meetings — so you allocate resources based on data, not gut feel.",
     visual: (
       <div className="bg-primary/90 rounded-xl p-4">
         <div className="grid grid-cols-2 gap-2">
