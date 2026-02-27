@@ -92,12 +92,12 @@ const HeroSection = () => (
           <span className="text-primary-foreground/80 text-sm font-medium">Project Context Engine</span>
         </div>
 
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-5 font-display">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-4 md:mb-5 font-display">
           Complete project clarity.{" "}
           <span className="text-brand-orange">No intuition required.</span>
         </h1>
 
-        <p className="text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-10 max-w-xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto">
           Agilow unifies Slack, Jira, and meeting context into a single, verifiable source of truth. Stop chasing updates and start leading—reclaim 10 hours of your week, every week.
         </p>
 
@@ -111,7 +111,7 @@ const HeroSection = () => (
           </Button>
         </div>
 
-        <div className="mt-16 flex items-center justify-center gap-8 text-primary-foreground/40 text-sm">
+        <div className="mt-10 md:mt-16 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-primary-foreground/40 text-xs sm:text-sm">
           <span className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 bg-success rounded-full" />
             Save 6–10 hrs/week
