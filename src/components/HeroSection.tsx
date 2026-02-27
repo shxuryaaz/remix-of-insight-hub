@@ -11,14 +11,28 @@ const navLinks = [
   { label: "For Teams", href: "#personas" },
 ];
 
+const smoothScrollTo = (target: number, duration = 1200) => {
+  const start = window.scrollY;
+  const distance = target - start;
+  let startTime: number | null = null;
+  const ease = (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const step = (time: number) => {
+    if (!startTime) startTime = time;
+    const progress = Math.min((time - startTime) / duration, 1);
+    window.scrollTo(0, start + distance * ease(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+};
+
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
   e.preventDefault();
   if (href === "#") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    smoothScrollTo(0);
     return;
   }
   const el = document.querySelector(href);
-  if (el) el.scrollIntoView({ behavior: "smooth" });
+  if (el) smoothScrollTo(el.getBoundingClientRect().top + window.scrollY - 80);
 };
 
 const Navbar = () => {
