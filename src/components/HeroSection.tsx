@@ -107,8 +107,8 @@ const HeroSection = () => (
         </div>
 
         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-4 md:mb-5 font-display">
-          Portfolio Health & Data in minutes{" "}
-          <span className="text-brand-orange">Intelligence for Software Executives</span>
+          AI-Powered Portfolio Health & Forecasting Data in minutes{" "}
+          <span className="text-brand-orange">for Software Executives</span>
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto">
