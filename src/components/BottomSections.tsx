@@ -144,7 +144,7 @@ const Footer = () => (
     <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <span className="text-primary-foreground/50 text-sm">© 2026 Agilow. All rights reserved.</span>
       <div className="flex gap-6 text-primary-foreground/40 text-sm">
-        <a href="#" className="hover:text-primary-foreground/70 transition-colors">Privacy</a>
+        <a href="/privacy" className="hover:text-primary-foreground/70 transition-colors">Privacy</a>
         <a href="#" className="hover:text-primary-foreground/70 transition-colors">Terms</a>
         <a href="#" className="hover:text-primary-foreground/70 transition-colors">Contact</a>
       </div>
