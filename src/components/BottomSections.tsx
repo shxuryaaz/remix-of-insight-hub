@@ -145,7 +145,7 @@ const Footer = () => (
       <span className="text-primary-foreground/50 text-sm">© 2026 Agilow. All rights reserved.</span>
       <div className="flex gap-6 text-primary-foreground/40 text-sm">
         <a href="/privacy" className="hover:text-primary-foreground/70 transition-colors">Privacy</a>
-        <a href="#" className="hover:text-primary-foreground/70 transition-colors">Terms</a>
+        <a href="/security" className="hover:text-primary-foreground/70 transition-colors">Security</a>
         <a href="#" className="hover:text-primary-foreground/70 transition-colors">Contact</a>
       </div>
     </div>
