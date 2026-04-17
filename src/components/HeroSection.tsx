@@ -48,7 +48,7 @@ const Navbar = () => {
               {l.label}
             </a>
           )}
-          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm">Book a Call</Button></a>
+          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm">Request a Private Preview</Button></a>
         </div>
         <button className="md:hidden text-primary-foreground" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X size={24} /> : <Menu size={24} />}
