@@ -112,7 +112,7 @@ const HeroSection = () =>
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto text-center">
-          Stop losing clinical momentum to fragmented data. Agilow synthesizes your team's technical discussions into actionable project intelligence—giving you the "Why" behind every milestone without the status meetings.
+          Stop losing clinical momentum to fragmented data. Agilow synthesizes your team's technical discussions into actionable project intelligence—giving you the "Why" behind every milestone.
         </p>
 
         <div className="flex justify-center">
