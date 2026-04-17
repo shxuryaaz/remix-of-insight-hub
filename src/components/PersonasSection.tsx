@@ -4,26 +4,26 @@ import { User, Code2, LineChart } from "lucide-react";
 const personas = [
   {
     icon: User,
-    role: "Product Managers",
-    name: "Sarah",
-    pain: "I spend half my day answering the same questions over and over.",
-    solution: "Her team queries Agilow's Chat instead of pinging Sarah. She reclaims 6 hours a week for actual product work.",
+    role: "Product Leaders",
+    name: "I've eliminated the Friday status hunt.",
+    pain: "I spent half my week chasing teams for updates before every leadership review.",
+    solution: "Leadership now queries Agilow's Chat instead of pinging the PM org. Hours reclaimed for actual product work — not status theater.",
     metric: "–30% direct PM pings",
   },
   {
     icon: Code2,
-    role: "Engineers",
-    name: "Leo",
-    pain: "The ticket says what to build, but never why. I'm afraid to ask.",
-    solution: "The Decision Ledger shows him the reasoning behind past choices — with links to the original conversation. Full context, zero awkwardness.",
+    role: "Engineering",
+    name: "We finally have a record of our R&D pivots.",
+    pain: "The ticket says what to build, but never why. New engineers were afraid to ask.",
+    solution: "The Decision Ledger surfaces the reasoning behind past technical choices — with links to the original conversation. Full context, zero awkwardness.",
     metric: "Zero onboarding anxiety",
   },
   {
     icon: LineChart,
     role: "Executives",
-    name: "Elena",
-    pain: "I hear 'everything is on track' — then it slips two weeks later.",
-    solution: "Agilow's risk dashboard spots rising frustration and bottlenecks in team conversations before they become full-blown crises.",
+    name: "I see drift before it becomes a delay.",
+    pain: "I'd hear 'everything is on track' — then milestones would slip two weeks later.",
+    solution: "Agilow's risk dashboard spots rising frustration and bottlenecks in team conversations before they become full-blown launch crises.",
     metric: "2-week risk lead time",
   },
 ];
@@ -65,7 +65,7 @@ const PersonasSection = () => (
               <p.icon className="w-5 h-5 text-accent" />
             </div>
             <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider">{p.role}</span>
-            <h3 className="text-lg font-bold font-display text-foreground mt-1 mb-3">{p.name}'s Story</h3>
+            <h3 className="text-lg font-bold font-display text-foreground mt-1 mb-3">"{p.name}"</h3>
             <p className="text-sm text-muted-foreground mb-3 italic">"{p.pain}"</p>
             <p className="text-sm text-foreground/80 mb-4">{p.solution}</p>
             <div className="bg-success/10 text-success rounded-lg px-3 py-2 text-xs font-semibold inline-block">
