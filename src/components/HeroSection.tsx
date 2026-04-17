@@ -48,7 +48,7 @@ const Navbar = () => {
               {l.label}
             </a>
           )}
-          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm">Book a Call</Button></a>
+          <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm">Request a Private Preview</Button></a>
         </div>
         <button className="md:hidden text-primary-foreground" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -70,7 +70,7 @@ const Navbar = () => {
                   {l.label}
                 </a>
             )}
-              <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm" className="mt-2 w-full">Book a Call</Button></a>
+              <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer"><Button variant="hero" size="sm" className="mt-2 w-full">Request a Private Preview</Button></a>
             </div>
           </motion.div>
         }
@@ -107,19 +107,18 @@ const HeroSection = () =>
       
 
         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.35] tracking-tight mb-4 md:mb-5 font-display">
-          AI-Powered Portfolio Health & Forecasting Data in minutes{" "}
-          <span className="text-brand-orange">
-for Software Executives</span>
+          The Ground Truth for{" "}
+          <span className="text-brand-orange">Life Sciences Engineering.</span>
         </h1>
 
-        <p className="text-sm sm:text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto text-center">Stop disturbing your highest paid leaders for portfolio health questions.
-Agilow unifies scattered data - giving you accurate portfolio insights at your fingertips.
-      </p>
+        <p className="text-sm sm:text-base md:text-lg text-primary-foreground/60 leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto text-center">
+          Stop losing clinical momentum to fragmented data. Agilow synthesizes your team's technical discussions into actionable project intelligence—giving you the "Why" behind every milestone without the status meetings.
+        </p>
 
         <div className="flex justify-center">
           <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer">
             <Button variant="hero" size="xl">
-              Book a Call
+              Request a Private Preview
               <ArrowRight className="ml-1" />
             </Button>
           </a>

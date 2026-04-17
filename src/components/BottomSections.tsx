@@ -130,7 +130,7 @@ const CTASection = () => (
         </p>
         <a href="https://calendly.com/shiv-agilow/warm-chat-with-shiv" target="_blank" rel="noopener noreferrer">
           <Button variant="hero" size="xl">
-            Book a Call
+            Request a Private Preview
             <ArrowRight className="ml-1" />
           </Button>
         </a>
