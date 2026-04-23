@@ -160,7 +160,13 @@ const Terms = () => {
 
         <h2>14. Changes to These Terms</h2>
         <p>
-          We may update these Terms from time to time. When we make material changes, we will update the "Last Updated" date and notify active customers by email or in-app notice at least 14 days before the changes take effect. Your continued use of the Service after the effective date constitutes your acceptance of the updated Terms.
+          We may update these Terms from time to time. Non-material changes (such as clarifications, typographical corrections, or updates reflecting new features) may take effect immediately upon posting.
+        </p>
+        <p>
+          For material changes — such as changes to pricing, core features, or how we handle your data — we will update the "Last Updated" date and notify active customers by email or in-app notice at least 14 days before the changes take effect.
+        </p>
+        <p>
+          Your continued use of the Service after the effective date of any change constitutes your acceptance of the updated Terms.
         </p>
 
         <h2>15. Governing Law and Disputes</h2>
