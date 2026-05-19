@@ -147,9 +147,7 @@ const FeaturesSection = () => (
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.04 }}
-            className={`grid md:grid-cols-2 gap-8 items-center bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all p-8 md:p-10 ${
-              i % 2 === 1 ? "md:direction-rtl" : ""
-            }`}
+            className="grid md:grid-cols-2 gap-8 items-center bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all p-8 md:p-10"
           >
             <div className={i % 2 === 1 ? "md:order-2" : ""}>
               <div className="flex items-center gap-3 mb-4">

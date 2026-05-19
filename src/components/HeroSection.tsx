@@ -6,8 +6,8 @@ import agilowLogoWhite from "@/assets/agilow-logo-white.png";
 
 const navLinks = [
 { label: "Home", href: "#" },
-{ label: "Features", href: "#features" },
 { label: "How It Works", href: "#how-it-works" },
+{ label: "Features", href: "#features" },
 { label: "For Teams", href: "#personas" }];
 
 

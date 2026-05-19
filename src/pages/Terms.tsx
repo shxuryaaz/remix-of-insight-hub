@@ -5,7 +5,7 @@ const Terms = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navbar */}
-      <nav className="bg-primary py-4 px-6">
+      <nav className="sticky top-0 z-50 bg-primary py-4 px-6">
         <div className="container mx-auto flex items-center justify-between">
           <Link to="/">
             <img src={agilowLogoWhite} alt="Agilow" className="h-8" />
